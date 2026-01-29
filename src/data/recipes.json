@@ -1,0 +1,116 @@
+[
+    {
+      "id": "p-satchel-1",
+      "name": "Provisions Satchel",
+      "category": "Satchel",
+      "ingredients": [
+        { "item": "Perfect Deer Pelt", "amount": 1 },
+        { "item": "Perfect Bison Pelt", "amount": 1 },
+        { "item": "Perfect Raccoon Pelt", "amount": 1 }
+      ],
+      "benefit": "Zvyšuje kapacitu pro potraviny."
+    },
+    {
+      "id": "p-satchel-2",
+      "name": "Ingredients Satchel",
+      "category": "Satchel",
+      "ingredients": [
+        { "item": "Perfect Deer Pelt", "amount": 1 },
+        { "item": "Perfect Badger Pelt", "amount": 1 },
+        { "item": "Perfect Squirrel Pelt", "amount": 1 }
+      ],
+      "benefit": "Zvyšuje kapacitu pro suroviny na vaření."
+    },
+    {
+      "id": "p-satchel-3",
+      "name": "Materials Satchel",
+      "category": "Satchel",
+      "ingredients": [
+        { "item": "Perfect Deer Pelt", "amount": 1 },
+        { "item": "Perfect Boar Pelt", "amount": 1 },
+        { "item": "Perfect Iguana Skin", "amount": 1 }
+      ],
+      "benefit": "Zvyšuje kapacitu pro materiály na craftění."
+    },
+    {
+      "id": "p-satchel-4",
+      "name": "Valuables Satchel",
+      "category": "Satchel",
+      "ingredients": [
+        { "item": "Perfect Deer Pelt", "amount": 1 },
+        { "item": "Perfect Beaver Pelt", "amount": 1 },
+        { "item": "Perfect Rabbit Pelt", "amount": 1 }
+      ],
+      "benefit": "Zvyšuje kapacitu pro cennosti."
+    },
+    {
+      "id": "p-satchel-5",
+      "name": "Tonic Satchel",
+      "category": "Satchel",
+      "ingredients": [
+        { "item": "Perfect Deer Pelt", "amount": 1 },
+        { "item": "Perfect Buck Pelt", "amount": 1 },
+        { "item": "Perfect Elk Pelt", "amount": 1 }
+      ],
+      "benefit": "Zvyšuje kapacitu pro toniky."
+    },
+    {
+      "id": "p-satchel-6",
+      "name": "Kit Satchel",
+      "category": "Satchel",
+      "ingredients": [
+        { "item": "Perfect Deer Pelt", "amount": 1 },
+        { "item": "Perfect Cougar Pelt", "amount": 1 },
+        { "item": "Perfect Wolf Pelt", "amount": 1 }
+      ],
+      "benefit": "Zvyšuje kapacitu pro vybavení (kit)."
+    },
+    {
+      "id": "p-satchel-7",
+      "name": "Legend of the East Satchel",
+      "category": "Satchel",
+      "ingredients": [
+        { "item": "Perfect Deer Pelt", "amount": 1 },
+        { "item": "Perfect Cougar Pelt", "amount": 1 },
+        { "item": "Perfect Wolf Pelt", "amount": 1 }
+      ],
+      "note": "Vyžaduje vycraftění všech ostatních brašen.",
+      "benefit": "Maximální kapacita pro všechny předměty."
+    },
+    {
+      "id": "p-camp-1",
+      "name": "Arthur's Lodging: Alligator Rug",
+      "category": "Camp Upgrade",
+      "ingredients": [
+        { "item": "Perfect Alligator Skin", "amount": 1 }
+      ],
+      "benefit": "Dekorace Arthurova stanu."
+    },
+    {
+      "id": "p-camp-2",
+      "name": "John's Lodging: Boar Rug",
+      "category": "Camp Upgrade",
+      "ingredients": [
+        { "item": "Perfect Boar Pelt", "amount": 1 }
+      ],
+      "benefit": "Dekorace Johnova stanu."
+    },
+    {
+      "id": "p-camp-3",
+      "name": "Main Camp: Ox Hide Rug",
+      "category": "Camp Upgrade",
+      "ingredients": [
+        { "item": "Perfect Ox Hide", "amount": 2 }
+      ],
+      "benefit": "Dekorace okolí stolu v kempu."
+    },
+    {
+      "id": "p-camp-4",
+      "name": "Scout Fire: Cougar Skin Cover",
+      "category": "Camp Upgrade",
+      "ingredients": [
+        { "item": "Perfect Cougar Pelt", "amount": 2 }
+      ],
+      "benefit": "Vylepšení posezení u ohně."
+    }
+  ]

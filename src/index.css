@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+
+@theme {
+  --font-western: "Playfair Display", serif;
+  --font-journal: "Special Elite", system-ui;
+  
+
+  --color-rdr-red: #8b0000;
+  --color-rdr-paper: #d4c4a8;
+  --color-rdr-dark: #1a1510;
+}
+
+/* 2. Nastav základní styl pro celou stránku */
+@layer base {
+  body {
+    background-color: var(--color-rdr-dark);
+    color: var(--color-rdr-paper);
+    font-family: var(--font-journal);
+  }
+  h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-western);
+    color: var(--color-rdr-red);
+  }
+  button {
+    background-color: var(--color-rdr-red);
+    color: var(--color-rdr-paper);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: var(--font-journal);
+  }
+}
