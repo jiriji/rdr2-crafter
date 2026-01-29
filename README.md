@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+🤠 Pearson’s Ledger - RDR2 Crafting Tracker
+A web-based crafting companion for Red Dead Redemption 2. This app helps players track their hunting progress for camp upgrades and satchels, just like Arthur Morgan does in his journal.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠 Features
+Live Inventory Management: Add items to your satchel with a single click.
 
-Currently, two official plugins are available:
+Dynamic Crafting Logic: Recipes automatically track if you have enough pelts, skins, or feathers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Smart Dashboard: A progress bar showing how close you are to completing all camp upgrades.
 
-## React Compiler
+Ready-to-Craft Section: Instantly see which upgrades you can turn in to Pearson right now.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Authentic UI: Styled with Tailwind CSS to mimic the weathered parchment and western aesthetic of the game.
 
-## Expanding the ESLint configuration
+🚀 Tech Stack
+React (Vite)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Tailwind CSS (Custom theme with Western & Journal fonts)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Lucide React (Icons)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📖 How it works
+The app follows the Single Source of Truth principle. The global state of the inventory is passed down to individual RecipeCard components, which calculate their status in real-time.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+JavaScript
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+// Example of the "Ready to Craft" logic
+const completedRecipes = recipes.filter(recipe => 
+  recipe.ingredients.every(ing => (inventory[ing.item] || 0) >= ing.amount)
+);
+🌲 Project Structure
+App.jsx: State management and main layout.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Dashboard.jsx: Progress tracking and "Ready to Craft" notifications.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+RecipeCard.jsx: Individual recipe requirements and "Add to Inventory" actions.
+
+Inventory.jsx: A breakdown of everything Arthur is currently carrying.
+
+🐎 Installation
+Clone the repository: git clone https://github.com/your-username/rdr2-ledger.git
+
+Install dependencies: npm install
+
+Run the development server: npm run dev
